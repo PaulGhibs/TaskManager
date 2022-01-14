@@ -11,6 +11,10 @@
 		610E5FAA2790A1550010E28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E5FA92790A1550010E28B /* ContentView.swift */; };
 		610E5FAC2790A1570010E28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610E5FAB2790A1570010E28B /* Assets.xcassets */; };
 		610E5FAF2790A1570010E28B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610E5FAE2790A1570010E28B /* Preview Assets.xcassets */; };
+		610E5FB92790A8430010E28B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E5FB82790A8430010E28B /* Task.swift */; };
+		610E5FBB2790A8C00010E28B /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E5FBA2790A8C00010E28B /* TaskViewModel.swift */; };
+		610E5FBD2790D14E0010E28B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E5FBC2790D14E0010E28B /* Home.swift */; };
+		61CEE8232791874D002425F6 /* UIVIEW+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CEE8222791874D002425F6 /* UIVIEW+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		610E5FA92790A1550010E28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		610E5FAB2790A1570010E28B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610E5FAE2790A1570010E28B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		610E5FB82790A8430010E28B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		610E5FBA2790A8C00010E28B /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		610E5FBC2790D14E0010E28B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		61CEE8222791874D002425F6 /* UIVIEW+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIEW+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,12 @@
 		610E5FA62790A1550010E28B /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				610E5FB72790A8160010E28B /* ViewModel */,
+				610E5FB62790A80D0010E28B /* Model */,
+				610E5FB52790A8030010E28B /* Views */,
 				610E5FA72790A1550010E28B /* TaskManagerApp.swift */,
 				610E5FA92790A1550010E28B /* ContentView.swift */,
-				610E5FAB2790A1570010E28B /* Assets.xcassets */,
+				61CEE82127918723002425F6 /* Resources */,
 				610E5FAD2790A1570010E28B /* Preview Content */,
 			);
 			path = TaskManager;
@@ -65,6 +76,39 @@
 				610E5FAE2790A1570010E28B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		610E5FB52790A8030010E28B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				610E5FBC2790D14E0010E28B /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610E5FB62790A80D0010E28B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				610E5FB82790A8430010E28B /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		610E5FB72790A8160010E28B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				610E5FBA2790A8C00010E28B /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		61CEE82127918723002425F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				610E5FAB2790A1570010E28B /* Assets.xcassets */,
+				61CEE8222791874D002425F6 /* UIVIEW+Extension.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				610E5FAA2790A1550010E28B /* ContentView.swift in Sources */,
+				610E5FBB2790A8C00010E28B /* TaskViewModel.swift in Sources */,
+				610E5FBD2790D14E0010E28B /* Home.swift in Sources */,
+				610E5FB92790A8430010E28B /* Task.swift in Sources */,
+				61CEE8232791874D002425F6 /* UIVIEW+Extension.swift in Sources */,
 				610E5FA82790A1550010E28B /* TaskManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
